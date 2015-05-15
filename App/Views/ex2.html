@@ -1,0 +1,22 @@
+
+<h1>AnguLife</h1>
+<br/>
+
+<div class="row">
+  <div class="col-lg-2">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button ng-click="m.createArray(m.arr)" class="btn btn-default" type="button">Começar!</button>
+      </span>
+      <input ng-model="m.arr" type="text" class="form-control" placeholder="Lado do quadrado">
+    </div>
+  </div>
+</div>
+
+<table>
+	<tr ng-repeat="(x, row) in m.arr">
+		<td ng-repeat="(y, column) in row">
+      @
+		</td>
+	</tr>
+</table>
